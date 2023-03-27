@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+#header {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr;
+    min-height: 10vh;
+    font-family: "Poppins", sans-serif;
+    padding: 1rem;
+    h2 {
+        text-align: start;
+        justify-self: start;
+        color: #c2c2c2;
+        font-size: 1.2rem;
+    }
+    nav {
+        display: grid;
+        justify-self: end;
+        img {
+            width: 20px;
+        }
+    }
+}
+#main {
+    min-height: 80vh;
+    background-color: #f5f0f0;
+    display: grid;
+    place-items: center;
+    align-self: start;
+    font-family: "Poppins", sans-serif;
+    h1 {
+        color: #e3333b;
+        align-self: strat;
+        font-size: 1.6rem;
+    }
+    #main-section {
+        width: 100%;
+        display: grid;
+        place-items: center;
+        align-self: start;
+        margin-top: 1rem;
+    }
+    .main_card {
+        min-height: 55vh;
+        width: 80%;
+        display: grid;
+        place-items: center;
+        align-self: start;
+        background-color: white;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+
+        .image_card {
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+            }
+        }
+        .title {
+            color: #e3333b;
+            font-size: 1rem;
+        }
+        .text {
+            text-align: center;
+            font-size: 0.89rem;
+            width: 90%;
+        }
+        .btn {
+            border: 2px solid #e3333b;
+            background-color: white;
+            padding: 10px;
+            margin-bottom: 1rem;
+        }
+    }
+}
+#footer {
+    min-height: 10vh;
+    display: grid;
+    place-items: center;
+    background-color: black;
+    p {
+        text-align: center;
+        color: rgb(211, 210, 210);
+    }
+}
+@media only screen and (min-width: 600px) {
+    #main-section .main_card {
+        width: 44%;
+    }
+}
+@media only screen and (min-width: 1000px) {
+    #main-section {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;
+        width: 70%;
+        .main_card {
+            width: 70%;
+        }
+    }
+}
